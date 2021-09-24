@@ -1,0 +1,35 @@
+@import './components/header.css';
+@import './components/hero.css';
+
+:root {
+  --just-white: #fff;
+  --just-pink: hsl(0, 100%, 68%);
+  --text-black: #242942;
+  --baseFont: 'Barlow Condensed', sans-serif;
+  --mobile-headline1Bold: bold 2.5rem / 2.5rem var(--baseFont);
+  --mobile-body3Regular: 400 0.9375rem / 1.125rem var(--baseFont);
+  --mobile-body3Bold: bold 0.9375rem / 1.125rem var(--baseFont);
+  --mobile-body1Regular: 400 1.125rem / 1.625rem var(--baseFont);
+  --mobile-smallBold: bold 0.875rem / 1rem var(--baseFont);
+  --desktop-headline1Bold: bold 4rem / 4rem var(--baseFont);
+  --mobile-smallRegular: 400 0.875rem / 1rem var(--baseFont);
+}
+
+body {
+  margin: 0;
+  font-family: var(--baseFont);
+  color: var(--text-black);
+  overflow: hidden;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-inline-size: 1100px;
+  margin: auto;
+}

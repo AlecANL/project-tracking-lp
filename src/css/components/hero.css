@@ -1,0 +1,125 @@
+.hero-content {
+  block-size: calc(100vh - 80px);
+  /* overflow: hidden; */
+}
+
+.cover img {
+  max-inline-size: 100%;
+}
+
+.description {
+  padding-inline: 2rem;
+  margin-block-start: 1.875rem;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 1.875rem;
+  gap: 0.5rem;
+}
+.hero-content .title {
+  font: var(--mobile-headline1Bold);
+  text-transform: uppercase;
+  margin-inline: 0;
+  margin-block: 1rem;
+}
+.head-tag .tag {
+  display: block;
+  inline-size: 3.125rem;
+  text-align: center;
+  padding: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font: var(--mobile-body3Bold);
+  background-color: var(--text-black);
+  color: var(--just-white);
+  border-radius: 1.25rem;
+}
+.head-tag .text {
+  position: relative;
+  font: var(--mobile-body3Regular);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--text-black);
+  opacity: 0.5;
+  z-index: -1;
+}
+.desc {
+  margin: 0;
+  font: var(--mobile-body1Regular);
+}
+.btn {
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  border-color: transparent;
+  font: var(--mobile-smallBold);
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  opacity: 0.5;
+}
+.is-pink {
+  background-color: var(--just-pink);
+  color: var(--just-white);
+}
+.cta span {
+  font: var(--mobile-smallRegular);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  opacity: 0.5;
+}
+@media screen and (min-width: 480px) {
+  .cta {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-content {
+    block-size: calc(100vh - 200px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'description cover';
+  }
+  .head-tag {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cta {
+    flex-direction: row;
+  }
+  .cover {
+    grid-area: cover;
+    align-self: center;
+  }
+  .description {
+    grid-area: description;
+    align-self: center;
+    margin: 0;
+  }
+  .hero-content .title {
+    font: var(--desktop-headline1Bold);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cover img {
+    max-inline-size: 200%;
+  }
+  .description {
+    padding-inline: 0;
+  }
+}
+
+@media screen and (min-width: 1366) {
+  .hero-content {
+    block-size: calc(100vh - 100px);
+  }
+}

@@ -1,0 +1,13 @@
+@import './components/nav.css';
+
+.header {
+  padding: 2rem;
+  position: sticky;
+  inset-block-start: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
